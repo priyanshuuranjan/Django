@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'home.html',{'title': 'Home'})
 def about(request):
     return render(request,'about.html',{'title':'About'})
 def products(request):
@@ -11,4 +11,4 @@ def products(request):
         {'name':'product2','price':45.45},
         {'name':'product3','price':99.45},
     ]
-    return render(request,'products.html')
+    return render(request,'products.html',{'title': 'Products'})
