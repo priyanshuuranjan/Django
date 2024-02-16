@@ -11,4 +11,4 @@ def products(request):
         {'name':'product2','price':45.45},
         {'name':'product3','price':99.45},
     ]
-    return render(request,'products.html',{'title': 'Products', 'products':products})
+    return render(request,'products.html',{'title': 'products', 'products':products})
