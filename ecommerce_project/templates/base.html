@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock %}</title></title>
+    <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    {%include 'header.html' %}
-    <div class="containt">
-        {%block content %}{% endblock}
+    {% include 'header.html' %}
+    <div class="content">
+        {% block content %}{% endblock %}
     </div>
-    {%include 'footer.html' %}
+    {% include 'footer.html' %}
 </body>
 </html>
-
-
