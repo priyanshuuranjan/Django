@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>job Application Form</h1>
+    <div>
+        <form action="post">
+            {%csrf_token%}
+            {{application_form.as_p}}
+            {{education_form.as_p}}
+            {{experience_form.as_p}}
+          <button type="submit">
+
+          </button>
+        </form>
+    </div>
+</body>
+</html>
