@@ -1,7 +1,6 @@
 from django.urls import path
-from .views import travel_booking_form, success  # fix the import statement
-
+from .import views
 urlpatterns = [
-    path("", travel_booking_form, name="travel_booking_form"),
-    path("success/", success, name="success"),
+    path("", views.travel_booking_form, name="travel_booking_form"),
+    path("", views.success, name="success"),
 ]
